@@ -1,6 +1,8 @@
 # MITRE-ATT-CK-Persistence-Service
 Windows persistence techniques. The script illustrates MITRE ATT&amp;CK tactics including file deployment, hiding files, creating and configuring a Windows service.
+[![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/) &nbsp;[![Platform](https://img.shields.io/badge/Windows-10/11-0078D6?logo=windows)](https://www.microsoft.com/windows)
 
+# Deployment Flowchart
 ```mermaid
 flowchart TD
     A([Start]) --> B{APPDATA Path?}
